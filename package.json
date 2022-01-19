@@ -3,11 +3,16 @@
   "version": "1.0.0",
   "dependencies": {},
   "devDependencies": {
-    "parcel": "^1.12.4"
+    "parcel": "^1.12.4",
+    "http-server": "^14.1.0",
+    "concurrently": "^7.0.0"
   },
   "scripts": {
     "dev": "parcel ./src/index.html",
     "build": "parcel build ./src/index.html",
-    "watch": "parcel watch ./src/index.html"
+    "watch": "parcel watch ./src/index.html",
+    "start": "npm run open",
+    "open": "concurrently \"http-server -a localhost -p 1234\" \"open http://localhost:1234/\"",
+    "demo": "node -e 'require(\"./src/index.js\").demoFunction()'"
   }
 }

@@ -29,7 +29,7 @@ namespace ChildProcesses
         /// i.e. npm run [script name]
         /// </summary>
         /// <param name="scriptName"></param>
-        public NpmScript(string scriptName = "dev")
+        public NpmScript(string scriptName = "demo")
         {
             this.scriptName = scriptName;
         }
@@ -82,29 +82,29 @@ namespace ChildProcesses
                     // Terrible things have happened
                     // so we can stop waiting for the success
                     // event to occur, because it ain't happening
-                    process.ErrorDataReceived += (sender, args) =>
-                    {
-                        output?.Invoke(args.Data);
+                    //process.ErrorDataReceived += (sender, args) =>
+                    //{
+                    //    output?.Invoke(args.Data);
                         
-                        if (!signal.Task.IsCompleted)
-                        {
-                            signal.SetException(new Exception("npm web server failed to start"));
-                        }
-                    };
+                    //    if (!signal.Task.IsCompleted)
+                    //    {
+                    //        signal.SetException(new Exception("npm web server failed to start"));
+                    //    }
+                    //};
                     
                     // set a timeout to wait for the process
                     // to finish starting and find the Url. If it doesn't then we
                     // assume that the user just ran a script
-                    var cancellationTokenSource = new CancellationTokenSource(timeout);
-                    cancellationTokenSource.Token.Register(() =>
-                    {
-                        if (signal.Task.IsCompleted) 
-                            return;
+                    //var cancellationTokenSource = new CancellationTokenSource(timeout);
+                    //cancellationTokenSource.Token.Register(() =>
+                    //{
+                    //    if (signal.Task.IsCompleted) 
+                    //        return;
                         
-                        // we don't want to wait for a url anymore
-                        Url = string.Empty;
-                        signal.SetResult(true);
-                    }, false);
+                    //    // we don't want to wait for a url anymore
+                    //    Url = string.Empty;
+                    //    signal.SetResult(true);
+                    //}, false);
                 }
             } 
             

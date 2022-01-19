@@ -1,6 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChildProcesses", "ChildProcesses.csproj", "{CDF58E65-3582-4E96-8420-A4DE9BCDEB79}"
+# Visual Studio Version 16
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "demoDotNet", "demoDotNet.csproj", "{CDF58E65-3582-4E96-8420-A4DE9BCDEB79}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

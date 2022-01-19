@@ -12,7 +12,7 @@ namespace ChildProcesses
             await parcel.RunAsync(Console.WriteLine);
 
             Console.WriteLine(parcel.HasServer
-                ? $"From ASP.NET Core. Parcel is started ({parcel.HasServer}) @ {parcel.Url} at process: {parcel.ProcessId}"
+                ? $"From PRPGRAM.CS Parcel is started ({parcel.HasServer}) @ {parcel.Url} at process: {parcel.ProcessId}"
                 : "Script has executed.");
 
             await Task.Delay(TimeSpan.FromSeconds(4));

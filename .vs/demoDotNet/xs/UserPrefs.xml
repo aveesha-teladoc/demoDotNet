@@ -1,0 +1,38 @@
+﻿<Properties StartupConfiguration="{CDF58E65-3582-4E96-8420-A4DE9BCDEB79}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="NpmScript.cs">
+    <Files>
+      <File FileName="Program.cs" Line="12" Column="1" />
+      <File FileName="NpmScript.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="demoDotNet" expanded="True">
+            <Node name="demoDotNet" expanded="True">
+              <Node name="src" expanded="True" />
+              <Node name="NpmScript.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="ClassPad">
+        <State name="__root__">
+          <Node name="demoDotNet" expanded="True" selected="True">
+            <Node name="demoDotNet" expanded="True">
+              <Node name="ChildProcesses" expanded="True">
+                <Node name="ChildProcesses.NpmScript" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.demoDotNet PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

@@ -1,1 +1,3 @@
-console.log('hello world');
+module.exports.demoFunction = function () {
+    console.log('hello from index.js');
+};
